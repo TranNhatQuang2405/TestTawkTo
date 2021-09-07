@@ -1,7 +1,7 @@
 ﻿function NhiemVu1()
 {
 	var mess = document.getElementById("BT1");
-	mess.innerHTML="<h3>M</h3><p>Quang: using only JSP and deloy</p><p>Nguyên:Using only Servlet</p><p>Phát: Using Combine</p>";
+	mess.innerHTML="<h3>Mission</h3><p>Quang: using only JSP and deloy</p><p>Nguyên:Using only Servlet</p><p>Phát: Using Combine</p>";
 }
 function NhiemVu2()
 {
