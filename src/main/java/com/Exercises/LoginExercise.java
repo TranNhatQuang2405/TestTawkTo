@@ -33,7 +33,6 @@ public class LoginExercise extends HttpServlet {
 		String password = request.getParameter("password");
 		String email = request.getParameter("email");
 		Users users = new Users(username,password,email);
-		System.out.println(username);
 		request.setAttribute("user",users);
 		request.getRequestDispatcher("exercises/exercise1_1.jsp").forward(request, response);
 	}
