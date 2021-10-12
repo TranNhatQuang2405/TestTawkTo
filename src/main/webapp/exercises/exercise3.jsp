@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>  
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,7 +13,7 @@
 		height="500px"></iframe>
 	<br />
 	<hr />
-	<a href="https://exercisegroupweb.herokuapp.com/Exercises">Back
-		Door</a>
+	<c:url var="Exercise" value="/Exercises"></c:url>
+	<a href="${Exercise}">Back Door</a>
 </body>
 </html>

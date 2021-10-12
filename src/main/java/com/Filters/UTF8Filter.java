@@ -1,6 +1,8 @@
 package com.Filters;
 
 import java.io.IOException;
+
+import javax.servlet.DispatcherType;
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
 import javax.servlet.FilterConfig;
@@ -9,7 +11,7 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
 
-@WebFilter("/*")
+@WebFilter(urlPatterns = "/*", dispatcherTypes = DispatcherType.REQUEST)
 public class UTF8Filter implements Filter {
 
     public UTF8Filter() {
@@ -28,9 +30,6 @@ public class UTF8Filter implements Filter {
 		chain.doFilter(request, response);
 	}
 
-	/**
-	 * @see Filter#init(FilterConfig)
-	 */
 	public void init(FilterConfig fConfig) throws ServletException {
 		// TODO Auto-generated method stub
 	}
