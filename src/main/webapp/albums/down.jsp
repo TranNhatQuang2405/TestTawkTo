@@ -25,12 +25,17 @@
 			<a href="music/${album}/Doraemon_old.mp3">MP3</a>
 		</td>
 	</tr>
+	<tr>
+		<td>Yume Wo Kanaete Doraemon  </td>
+		<td>
+			<a href="music/${album}/Yume.mp3">MP3</a>
+		</td>
+	</tr>
 	</table>
-	
 	<br />
 	<hr />
 	<c:url var="Exercise" value="/Exercises"></c:url>
 	<a href="${Exercise}">Back Door</a>
-
+	
 </body>
 </html>
